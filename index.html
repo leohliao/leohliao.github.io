@@ -64,13 +64,14 @@
       <input id="name" type="text" name="name">
 
       <label for="rating">Rating</label>
-      1<input type="raido" name="rating" value="1" checked>
-      2<input type="raido" name="rating" value="2" checked>
-      3<input type="raido" name="rating" value="3" checked>
-      4<input type="raido" name="rating" value="4" checked>
-      5<input type="raido" name="rating" value="5" checked>
+      1<input type="radio" name="rating" value="1" checked>
+      2<input type="radio" name="rating" value="2" checked>
+      3<input type="radio" name="rating" value="3" checked>
+      4<input type="radio" name="rating" value="4" checked>
+      5<input type="radio" name="rating" value="5" checked>
 
       <labl for="expertise">Cooking Expertise</label>
+
       <select id="expertise" name="expertise">
         <option value="select_cooking_expertise" disabled="true" selected="true"> -- Select Cooking Expertise -- </option>
         <option value="Sometimes">Sometimes Cook</option>
@@ -79,8 +80,9 @@
         <option value="Professional">Professional Chef</option>
      </select>
      <br>
-     <label for="review">Review</label>
-     <textarea name="review" cols="30" rows="10"></textarea>
+     <br>
+     <label for="additional_comments">Additional Comments</label>
+     <textarea name="review" cols="50" rows="10"></textarea>
 
       <input type="submit" value="Submit Review">
     </form>
