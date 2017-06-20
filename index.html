@@ -11,6 +11,7 @@
         <li> <a href="#description">Descriptions</a></li>
         <li><a href="#ingredients">Ingredients</a></li>
         <li><a href="#directions">Directions</a></li>
+        <li><a href="#review">Review</a></li>
       </ul>
     </nav>
     </header>
@@ -56,7 +57,34 @@
     </ol>
     <h2> Now your delicious Kung Pao Chicken is ready to served!</h2>
   </section>
-  
+  <section id="review"
+    <h2>Reviews</h2>
+    <form action="/reviews" method="post">
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name">
+
+      <label for="rating">Rating</label>
+      1<input type="raido" name="rating" value="1" checked>
+      2<input type="raido" name="rating" value="2" checked>
+      3<input type="raido" name="rating" value="3" checked>
+      4<input type="raido" name="rating" value="4" checked>
+      5<input type="raido" name="rating" value="5" checked>
+
+      <labl for="expertise">Cooking Expertise</label>
+      <select id="expertise" name="expertise">
+        <option value="select_cooking_expertise" disabled="true" selected="true"> -- Select Cooking Expertise -- </option>
+        <option value="Sometimes">Sometimes Cook</option>
+        <option value="Everyday">Cooks Everyday </option>
+        <option value="Hobby">Cooking is a hobby</option>
+        <option value="Professional">Professional Chef</option>
+     </select>
+     <br>
+     <label for="review">Review</label>
+     <textarea name="review" cols="30" rows="10"></textarea>
+
+      <input type="submit" value="Submit Review">
+    </form>
+  </section>
   <footer>
     <p>Original Recipe by <a href="http://allrecipes.com/recipe/9027/kung-pao-chicken/">Arlena</a></p>
   </footer>
