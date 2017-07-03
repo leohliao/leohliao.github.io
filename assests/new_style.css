@@ -11,9 +11,9 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 20;
-  padding: 100;
-  border: 10;
+  margin: 0;
+  padding: 0;
+  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -51,3 +51,26 @@ table {
   border-spacing: 0;
 }
 
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    width: 27px;
+    height: 27px;
+    background-image: url(../assets/stars.png);
+    vertical-align: bottom;
+}
+
+input[type="radio"]:checked {
+  background-position: 30px 30px;
+}
+input:last-child {
+    background: gold;
+}
+ol li:nth-of-type(2n) {
+  background-color: whitesmoke;
+}
+
+
+h2 + .user_review {
+    border-top: 1px solid black;
+}
